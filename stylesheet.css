@@ -7,16 +7,43 @@ ul, ol, li,
 h1, h2, h3, h4, h5, h6, p, div {
     margin: 0;
     padding: 0;
-    height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Lucida Grande";
+    font-family: 'Chakra Petch', sans-serif;
     background-color: #281660;
+    letter-spacing: 0.05em;
 }
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 72px;
+}
+
+h3 {
+    font-size: 64px;
+}
+
+h4 {
+    font-size: 48px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 24px;
 }
 
 .clear {
@@ -34,13 +61,15 @@ a {
 }
 
 header {
-    height: 80px;
+    height: 100px;
     width: 100%;
     background-color: #281660;
     position :fixed;
     top: 0;
     z-index: 10;
     box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
 }
 
 .logo {
@@ -59,7 +88,7 @@ header {
 }
 
 .header-right a {
-    line-height: 80px;
+    line-height: 100px;
     padding: 0 25px;
     color: white;
     display: block;
@@ -84,9 +113,10 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 330px 0 300px 0;
+    padding: 200px 0 300px 0;
     background-image: url("./assets/main-bg.jpg");
-    width: 90%;
+    /* width: 90%; */
+    width: 100%;
     height: auto;
     background-size: cover;
     color: white;
@@ -97,13 +127,13 @@ header {
 
 
 .top-wrapper-text {
-    width: 80%;
+    width: 90%;
 }
 
 .white-container {
     background-color: white;
     margin-top: 200px;
-    padding: 100px 0 300px 0;
+    padding: 100px 0 0 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -116,22 +146,45 @@ header {
     border-radius: 100px;
 }
 
+.white-container .iscc-def {
+    display: table-cell;
+
+}
+
 .iscc-def {
     width: 90%;
-    height: 1230px;
+    height: 1100px;
+    color: black;
 }
 
 .iscc-def-purp {
     margin-top: -100px;
     margin-left: -1px;
+    line-height: 1100px;
     width: 40%;
-    line-height: 1230px;
-    text-align: center;
 }
 
 .iscc-logo {
-    width: 470px;
-    height: 160px;
+    width: 80%;
+}
+
+.iscc-content {
+    float: left;
+    text-align: center;
+}
+
+.iscc-def-text {
+    width: 60%;
+    padding: 0 5em 0 5em;
+}
+
+.iscc-content p {
+    margin-top: 80px;
+}
+
+.regist-req-cards {
+    color: white;
+    display: inline;
 }
 
 .regist-req {
@@ -141,8 +194,20 @@ header {
     margin-bottom: 200px;
 }
 
-.regist-req-cards {
-    margin-top: -1150px;
+.light-purple-card p {
+    line-height: normal;
+    margin-left: 8em;
+    margin-top: -240px;
+}
+
+.regist-req h3 {
+    font-size: 60px;
+    line-height: 80px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
 }
 
 .light-purple-card {
@@ -174,26 +239,26 @@ header {
     background-image: url('./assets/last-bg.png');
     background-size: cover;
     width: 100%;
-    height: 7880px;
+    height: fit-content;
     border-radius: 144px 144px 0px 0px;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -700px;
-}
-
-.big-container h1 {
-    padding-top: 200px;
 }
 
 .event-details {
     height: fit-content;
 }
 
+.event-details h2 {
+    color: white;
+    padding-top: 200px;
+}
+
 .rundown {
     width: 60%;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .bubbles {
@@ -210,6 +275,22 @@ header {
     z-index: 2;
 }
 
+.bubble-text {
+    padding-top: 80px;
+    width: 65%;
+    height: inherit;
+    align-items: center;
+}
+
+.bubble-text-left {
+    margin-left: 35%;
+}
+
+.bubble p {
+    margin-top: 40px;
+    padding: 0 7em 0 7em;
+}
+
 .preliminary {
     background-image: url('./assets/preliminary.png');
 }
@@ -224,18 +305,19 @@ header {
 }
 
 .bubble .image {
-    width: 30%;
+    width: 35%;
     height: inherit;
     border-radius: inherit;
     background-size: cover;
 }
 
-.img-left {
-    float: left;
-}
-
 .img-right {
     float: right;
+    margin-top: -550px;
+}
+
+.img-left {
+    float: left;
 }
 
 .final {
@@ -250,28 +332,34 @@ header {
     z-index: 1;
 }
 
+.final-content {
+    padding: 300px 15em 0 15em;
+}
+
+.final-content p {
+    margin-top: 50px;
+}
+
 .segements {
     margin-top: 200px;
-    padding: 50px 0 100px 0;
-    height: 650px;
+    padding: 100px 0 100px 0;
     width: 90%;
     filter: drop-shadow(-10px 4px 4px rgba(0, 0, 0, 0.25));
-    display: block;
     margin-left: auto;
     margin-right: auto;
     display: table;
+
 }
 
-
 .card {
-    margin-left: 0;
+    margin-left: 5em;
     margin-right: 0;
-    height: 400px;
+    height: 300px;
     border-radius: 60px;
     padding: 0;
-    width: 22.5%;
+    width: 25%;
     float: left;
-    margin-left: 120px;
+    margin-top: 100px;
     filter: drop-shadow(-10px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -281,6 +369,72 @@ header {
     margin-left: -20px;
     height: 80px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.segements h3 {
+    color: white;
+}
+
+.card p {
+    padding: 80px 1em 0 1em;
+    text-align: center;
+}
+
+.sponsorship {
+    color: white;
+    margin-top: 250px;
+}
+
+.sponsorships img {
+    border-radius: 150px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.table-logo {
+    /* background-color: aliceblue; */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+
+.table-logo img {
+    border-radius: 150px;
+    /* border: 8px solid #343893; */
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.media-partners {
+    margin-top: 250px;
+    color: white;
+    margin-bottom: 250px;
+}
+
+footer {
+    text-align: center;
+    background-color: #281660;
+}
+
+.basis-logo {
+    width: 25%;
+}
+
+.collab-logo {
+    width: 15%;
+    margin-bottom: 30px;
+}
+
+.binus-logo {
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.logos img {
+    padding: 0 3em 0 3em;
 }
 
 
@@ -300,30 +454,28 @@ html span {
 }
 
 
-a {
+[class^=btn-] {
     text-decoration: none;
     line-height: 200px;
-    color: black;
-  }
-
-[class^=btn-] {
     position: relative;
     display: block;
     overflow: hidden;
-    width: 100%;
+    width: 50%;
     height: 200px;
-    max-width: 700px;
     margin: 1rem auto;
     text-transform: uppercase;
     border: 5px solid currentColor;
+    font-weight: bold;
   }
 
 
 .btn-6 {
     color: white;
     border-radius: 100px;
-    font-size: xx-large;
+    font-size: 70px;
+    letter-spacing: 0.05em;
   }
+
 .btn-6 span {
     position: absolute;
     display: block;
@@ -339,7 +491,6 @@ a {
     color: black;
     border: 0;
     padding: 5px;
-    /* border: 5px solid white; */
 }
 .btn-6:hover span {
     width: 225%;
