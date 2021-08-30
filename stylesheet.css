@@ -73,9 +73,9 @@ header {
 }
 
 .logo {
-    width: 60px;
-    margin-top: 10px;
+    width: 200px;
     line-height: 80px;
+    margin-top: 10px;
 }
 
 .header-left {
@@ -101,13 +101,6 @@ header {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.flexbox {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .top-wrapper {
     margin-top: 200px;
     display: block;
@@ -115,8 +108,8 @@ header {
     margin-right: auto;
     padding: 200px 0 300px 0;
     background-image: url("./assets/main-bg.jpg");
-    /* width: 90%; */
-    width: 100%;
+    width: 80%;
+    /* width: 100%; */
     height: auto;
     background-size: cover;
     color: white;
@@ -152,15 +145,15 @@ header {
 }
 
 .iscc-def {
-    width: 90%;
-    height: 1100px;
+    width: 80%;
+    height: 900px;
     color: black;
 }
 
 .iscc-def-purp {
     margin-top: -100px;
     margin-left: -1px;
-    line-height: 1100px;
+    line-height: 900px;
     width: 40%;
 }
 
@@ -179,7 +172,7 @@ header {
 }
 
 .iscc-content p {
-    margin-top: 80px;
+    margin-top: 2em;
 }
 
 .regist-req-cards {
@@ -188,18 +181,21 @@ header {
 }
 
 .regist-req {
-    width: 90%;
-    height: 1700px;
+    width: 80%;
+    /* height: 1500px; */
+    height: fit-content;
     text-align: center;
     margin-bottom: 200px;
+    padding-bottom: 80px;
 }
 
 .light-purple-card p {
-    line-height: normal;
-    margin-left: 8em;
-    margin-top: -240px;
+    font-size: 30px;
+    line-height: 40px;
+    vertical-align: middle;
+    margin-left: 5em;
+    margin-top: -65px;
 }
-
 .regist-req h3 {
     font-size: 60px;
     line-height: 80px;
@@ -207,14 +203,13 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .light-purple-card {
     background-color: #343893;
     width: 80%;
-    line-height: 340px;
-    height: 250px;
+    height: 200px;
     margin-bottom: 80px;
     text-align: left;
     box-shadow: -10px 4px 4px rgba(0, 0, 0, 0.25);
@@ -225,7 +220,9 @@ header {
 }
 
 .light-purple-card img {
-    margin-left: 50px;
+    width: 8%;
+    margin-left: 5%;
+    margin-top: 60px;
 }
 
 .button-wrapper {
@@ -258,7 +255,7 @@ header {
 
 .rundown {
     width: 60%;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .bubbles {
@@ -337,6 +334,7 @@ header {
 }
 
 .final-content p {
+    font-size: 30px;
     margin-top: 50px;
 }
 
@@ -348,7 +346,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     display: table;
-
 }
 
 .card {
@@ -393,7 +390,6 @@ header {
 }
 
 .table-logo {
-    /* background-color: aliceblue; */
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -402,7 +398,6 @@ header {
 
 .table-logo img {
     border-radius: 150px;
-    /* border: 8px solid #343893; */
     margin-top: 80px;
     margin-left: 20px;
     margin-right: 20px;
@@ -415,8 +410,52 @@ header {
 }
 
 footer {
-    text-align: center;
     background-color: #281660;
+    padding: 50px 0 50px 0;
+}
+
+.socmed {
+    float: left;
+    padding: 0 0 100px 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.contact-us {
+    text-align: left;
+    float: left;
+    margin-left: 5%;
+}
+
+.socmed p {
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    line-height: 35px;
+    vertical-align:top;
+}
+
+.contact-us p {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.contact-us .p-s{
+    font-size: medium;
+}
+
+.contact-us span {
+    margin-right: 10px;
+}
+
+.contact-us img {
+    vertical-align: top;
+}
+
+.logos {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .basis-logo {
@@ -437,6 +476,35 @@ footer {
     padding: 0 3em 0 3em;
 }
 
+.contact-person {
+    margin-top: 100px;
+    color: white;
+}
+
+.contact-person li {
+    margin-top: 5px;
+}
+
+.contact-person img {
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.contact-person ul {
+    text-align: left;
+    font-family: 'Assistant', sans-serif;
+    line-height: 35px;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    list-style: none;
+    font-size: large;
+}
+
+.contact-person h4 {
+    font-size: 35px;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
 
