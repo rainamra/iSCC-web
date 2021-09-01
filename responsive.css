@@ -35,6 +35,10 @@
         margin-top: 150px;
     }
 
+    .timer-wrapper {
+        bottom: 0.5%;
+    }
+
     .white-container {
         margin-top: 100px;
         padding: 50px 0 50px 0;
